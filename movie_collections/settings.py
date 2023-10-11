@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'collection_app.middleware.JWTAuthMiddleware',
 ]
 
 ROOT_URLCONF = 'movie_collections.urls'

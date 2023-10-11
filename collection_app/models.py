@@ -27,3 +27,10 @@ class UserCollectionMovies(models.Model):
 
     class Meta:
         db_table = 'user_movies_collection_specific'
+
+class UserCollectionRequestCountAPI(models.Model):
+    request_count = models.IntegerField(default=0)
+    last_updated_on = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table = 'user_request_counts'
